@@ -10,7 +10,6 @@ var spotify = new Spotify({
 
 console.log(process.argv[2])
 var command=process.argv[2]
-var query=
 if (command=="spotify-this-song") {
 
   spotify.search({ type: 'track', query: 'All the Small Things' }, function(err, data) {
